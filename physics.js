@@ -33,18 +33,20 @@ World.add(engine.world, [
   Bodies.rectangle(800 + offset, 300, 50, 600 + 2 * offset, { isStatic: true }),
   Bodies.rectangle(-offset, 300, 50, 600 + 2 * offset, { isStatic: true })
 ]);
-function gravityOn(){
+
+    
+
+$('#gravityOn').click(function(){
     if(gravOn){
         engine.world.gravity['y']=0
         gravOn=false
-        
+        $('#gravity').html('False')
     }else{
         engine.world.gravity['y'] =1
         gravOn=true
-        
+        $('#gravity').html('True')
     }
-}
-
+})
 $(document).keydown(function(event){
 	console.log("KEYDOWN")
 	if(event.which===68){
