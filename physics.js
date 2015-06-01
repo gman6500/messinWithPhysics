@@ -37,11 +37,11 @@ function gravityOn(){
     if(gravOn){
         engine.world.gravity['y']=0
         gravOn=false
-        $("#gravity").html(gravOn)
+        
     }else{
         engine.world.gravity['y'] =1
         gravOn=true
-        $("#gravity").html(gravOn)
+        
     }
 }
 
