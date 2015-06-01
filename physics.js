@@ -90,19 +90,6 @@ $(document).keydown(function(event){
 		var temp=Bodies.polygon(Common.random(10,780), Common.random(10,780), Common.random(3,11), Common.random(20,50))
 		World.add(engine.world,temp)
 	}
-	if(event.which===71){
-		console.log(gravOn)
-		console.log(engine.world.gravity['x'])
-		console.log(engine.world.gravity['y'])
-		if(gravOn){
-			engine.world.gravity['y']=0
-			gravOn=false
-		}else{
-			engine.world.gravity['y'] =1 ;
-			gravOn=true
-		}
-	}
-
 })
 
 
